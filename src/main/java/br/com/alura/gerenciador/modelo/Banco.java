@@ -70,4 +70,15 @@ public class Banco {
 		
 		return null;
 	}
+
+	public Usuario existeUsuario(String login, String senha) {
+		
+		for(Usuario usuario : listaUsuarios) {
+			if(usuario.verificaLoginSenha(login, senha)) {
+				return usuario;
+			}
+		}
+		
+		return null;
+	}
 }
