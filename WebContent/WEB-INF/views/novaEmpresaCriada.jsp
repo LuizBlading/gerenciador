@@ -7,6 +7,8 @@
 	<title>Nova Empresa Criada</title>
 </head>
 	<body>
+		<c:import url="logout-parcial.jsp"/>
+	
 		
 		<c:if test="${ not empty empresa }">
 			<!-- = o sinal de igual faz o print na tela -->

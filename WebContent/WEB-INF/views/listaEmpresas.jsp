@@ -9,6 +9,14 @@
 		<title>Lista Empresas - Java Stard Taglib</title>
 	</head>
 	<body>
+		<!--importando arquivo de logout -->
+		<c:import url="logout-parcial.jsp"/>
+	
+		Usuario Logado: ${ usuarioLogado.login }
+		
+		<br>
+		<br>
+		<br>
 	
 		<c:if test="${ not empty empresa }">
 			<!-- = o sinal de igual faz o print na tela -->
